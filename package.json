@@ -1,6 +1,6 @@
 {
   "name": "async-steps.modules-as",
-  "version": "0.0.2",
+  "version": "0.0.25",
   "main": "dist/index.js",
   "author": {
     "email": "misha.basov.96@yandex.ru",

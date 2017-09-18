@@ -1,4 +1,4 @@
-import utils from 'async-steps/dist/utils';
+import utils from '../utils';
 
 /**
  * Модуль инициализации переменных

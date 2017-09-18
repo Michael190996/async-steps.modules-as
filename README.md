@@ -1,4 +1,4 @@
-# Async-steps.modules-as (0.0.1) **BETA**
+# Async-steps.modules-as (0.0.25) **BETA**
 ## Что это?
 **Async-steps.modules-as** - библиотека модулей для async-steps
 * [Установка](#Установка)
