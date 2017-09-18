@@ -47,20 +47,20 @@ npm run build # npm run prepublish
 Модуль добавляет компонент
 * params
 	- name {string} - уникальное имя компонента
-  - steps {[object]} - последовательные модули
+  - steps {object[]} - последовательные модули
 * vars (по завершению модуля)
   - vars.$BASIC.components[newComponentName] - params.steps
 #### callComponents
 Модуль массивно вызывает модуль [@callComponent](#callcomponent)
 * params
-  - names {[string]} - имена компонентов, которые должны вызываться
+  - names {string[]} - имена компонентов, которые должны вызываться
   - sync {boolean} - синхронность
 #### setComponents 
 Модуль массивно вызывает модуль [@setComponent](#setcomponent)
 * params
-  - components {[object]} - массив объектов параметов модуля [@setComponent](#setcomponent)
+  - components {object[]} - массив объектов параметов модуля [@setComponent](#setcomponent)
     - name {string} - уникальное имя компонента
-    - steps {[object]} - последовательные модули
+    - steps {object[]} - последовательные модули
 * vars (по завершению модуля)
   - [vars.$BASIC.components[newComponentName]] - params.steps
 #### if
@@ -68,14 +68,14 @@ npm run build # npm run prepublish
 - для шаблонизации используется библиотека lodash 
 * params
   - condition {string|boolean|number} - шаблон условия (lodash.template(`${condition} ? true : false`))
-  - steps {[object]} - последовательные модули
+  - steps {object[]} - последовательные модули
   - sync {boolean} - синхронность
 #### ifs
 Модуль массивно вызывает модуль [@if](#if)
 * params
-  - conditions {[object]} массив объектов параметов модуля [@if](#if)
+  - conditions {object[]} массив объектов параметов модуля [@if](#if)
   - condition {string|boolean|number} - шаблон условия (lodash.template(`${condition} ? true : false`))
-  - steps {[object]} - последовательные модули
+  - steps {object[]} - последовательные модули
   - sync {boolean} - синхронность
 #### for
 Модуль логического цикла
@@ -83,7 +83,7 @@ npm run build # npm run prepublish
 - для шаблонизации используется библиотека lodash 
 * params
   - condition {number|array} - условие (lodash.template(`${condition}`))
-  - steps {[object]} - последовательные модули
+  - steps {object[]} - последовательные модули
   - sync {boolean} - синхронность
 * vars (по завершению модуля)
   - vars.$BASIC.$forPath - цепочка от верхнего цикла до текущего
@@ -92,7 +92,7 @@ npm run build # npm run prepublish
 Модуль инициализации переменных
 - для шаблонизации используется библиотека lodash 
 * params
-  - init {array|[object]}
+  - init {array|object[]}
     - [{var: value}]|{var: value} - имя переменной и её значение (lodash.template(`${value}`))
 * vars (по завершению модуля)
   - [vars[newVar]]

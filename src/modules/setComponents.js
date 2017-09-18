@@ -1,7 +1,7 @@
 import setComponent from './setComponent';
 
 /**
- * @param {[object]} components - компоненты {params}
+ * @param {object[]} components - компоненты {params}
  * @param {*} [beforeResult] - результат предыдущего модуля
  * @param {object} vars - глобальный переменные
  * @param ctx - экземпляр Ctx

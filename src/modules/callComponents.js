@@ -1,7 +1,7 @@
 import callComponent from './callComponent';
 
 /**
- * @param {[string]} names - имена компонентов, установленных ранее {params}
+ * @param {string[]} names - имена компонентов, установленных ранее {params}
  * @param {boolean} [sync] - синхронность {params}
  * @param {*} [beforeResult] - результат предыдущего модуля
  * @param {object} vars - глобальный переменные
